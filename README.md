@@ -32,7 +32,20 @@ It provides endpoints for handling hosts, participants, invitations, registratio
 ---
 
 ## 📂 Project Structure
-WebineX/ 
+WebineX/ <br/>
+│── src/main/java/com/fintrack/ <br/>
+│ ├── controller/ # Controllers  <br/>
+│ ├── model/ # JPA Entities <br/>
+│ ├── repository/ # JPA Repositories <br/>
+│ ├── service/ # Business logic <br/>
+│ └── WebineXApplication.java <br/>
+│ <br/>
+│── src/main/resources/ <br/>
+│ ├── templates/ # templates file <br/>
+│ └── application.properties <br/>
+│ <br/>
+│── pom.xml # Maven dependencies <br/>
+│── README.md # Documentation <br/>
 
 
 ---
