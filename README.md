@@ -1,4 +1,3 @@
- 
 # 🌐 WebineX - Webinar Management REST API
 
 WebineX is a **Spring Boot-based RESTful API** designed to manage webinars efficiently.  
@@ -28,6 +27,68 @@ It provides endpoints for handling hosts, participants, invitations, registratio
 | Database | **MySQL** |
 | API Docs | **Swagger UI** |
 | Security | **Spring Security** |
+
+---
+
+## 📘 API Endpoints
+
+### **1. Users & Authentication**
+
+| Method | Endpoint | Description |
+|:-------|:----------|:-------------|
+| **POST** | `/api/users` | Create a new user |
+| **GET** | `/api/users` | Get all users |
+| **GET** | `/api/users/{id}` | Get a user by ID |
+| **PUT** | `/api/users/{id}` | Update a user by ID |
+| **DELETE** | `/api/users/{id}` | Delete a user by ID |
+
+---
+
+### **2. Webinar Management**
+
+| Method | Endpoint | Description |
+|:-------|:----------|:-------------|
+| **POST** | `/api/webinars` | Create a new webinar |
+| **GET** | `/api/webinars` | Get all webinars |
+| **GET** | `/api/webinars/{id}` | Get a webinar by ID |
+| **PUT** | `/api/webinars/{id}` | Update a webinar by ID |
+| **DELETE** | `/api/webinars/{id}` | Delete a webinar by ID |
+| **GET** | `/api/webinars/upcoming` | Get upcoming webinars |
+| **GET** | `/api/webinars/search?keyword=ANY_WORDS` | Search webinars by keyword |
+| **GET** | `/api/webinars/host/{hostId}` | Get webinars by host ID |
+
+---
+
+### **3. Registration**
+
+| Method | Endpoint | Description |
+|:-------|:----------|:-------------|
+| **POST** | `/api/registrations` | Register a user for a webinar |
+| **GET** | `/api/registrations/webinar/{webinarId}` | Get registrations by webinar ID |
+| **GET** | `/api/registrations/user/{userId}` | Get registrations by user ID |
+| **GET** | `/api/registrations/{id}` | Get registration by ID |
+| **DELETE** | `/api/registrations/{id}` | Delete a registration |
+| **GET** | `/api/registrations/check?webinarId=NO&userId=NO` | Check if a user is registered for a webinar |
+
+---
+
+### **4. Invitation**
+
+| Method | Endpoint | Description |
+|:-------|:----------|:-------------|
+| **POST** | `/api/invitations` | Send an invitation |
+| **GET** | `/api/invitations/webinar/{webinarId}` | Get invitations by webinar ID |
+| **GET** | `/api/invitations/{id}` | Get an invitation by ID |
+| **PUT** | `/api/invitations/{id}` | Update an invitation |
+
+---
+
+### **5. Analytics**
+
+| Method | Endpoint | Description |
+|:-------|:----------|:-------------|
+| **POST** | `/api/analytics` | Create a new analytics record |
+| **GET** | `/api/analytics/{id}` | Get analytics data by ID |
 
 ---
 
