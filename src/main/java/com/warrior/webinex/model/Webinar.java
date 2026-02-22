@@ -2,7 +2,6 @@ package com.warrior.webinex.model;
 
 import java.time.LocalDateTime;
 
-// import org.springframework.boot.autoconfigure.security.SecurityProperties.User;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
