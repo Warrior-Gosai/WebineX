@@ -12,7 +12,7 @@
 	<artifactId>webinex</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>webinex</name>
-	<description>Online webinar manager</description>
+	<description>Online webinar manager api</description>
 	<url/>
 	<licenses>
 		<license/>
